@@ -1,0 +1,42 @@
+﻿@model FinalGradutionProjectAPI.Models.CVWorkHistory
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CVWorkHistory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CV.Objective)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CV.Objective)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CVWorkHistoryJobTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CVWorkHistoryJobTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CVWorkHistoryDuration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CVWorkHistoryDuration)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

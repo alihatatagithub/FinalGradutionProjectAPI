@@ -1,0 +1,50 @@
+﻿@model FinalGradutionProjectAPI.Models.CVEduction
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CVEduction</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CV.Objective)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CV.Objective)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Major)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Major)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FacultyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FacultyName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Languages)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Languages)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

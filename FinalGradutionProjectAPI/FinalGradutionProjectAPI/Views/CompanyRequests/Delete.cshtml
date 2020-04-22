@@ -1,0 +1,64 @@
+﻿@model FinalGradutionProjectAPI.Models.CompanyRequest
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CompanyRequest</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyHR.CompanyHRName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyHR.CompanyHRName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyRequestJobTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyRequestJobTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyRequestJobRequirement)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyRequestJobRequirement)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyRequestJobExperience)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyRequestJobExperience)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProgrammingLanguage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProgrammingLanguage)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
